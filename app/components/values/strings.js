@@ -1,0 +1,14 @@
+export const SHOPPING_LIST = 'سلة المشتريات';
+export const MAIN = 'الرئيسية';
+export const ASK_EXPERT = 'اسأل الخبير';
+export const MY_MEALS = 'وجباتي';
+export const CALORIE_CALCULATOR = 'حاسبة السعرات';
+export const BREAKFAST = 'الإفطار';
+export const LUNCH = 'الغداء';
+export const DINNER = 'العشاء';
+export const SNACKS = 'وجبات خفيفة';
+export const MY_PLAN = 'خطتي الخاصة';
+export const EMAIL = 'اسم المستخدم أو الايميل';
+export const PASSWORD = 'كلمة المرور';
+export const SUBSCRIBE = 'اشتراك الآن';
+export const LOGIN = 'تسجيل الدخول';
