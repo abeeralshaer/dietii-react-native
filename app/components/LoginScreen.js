@@ -3,7 +3,8 @@ import {
   View,
   Text,
   Button,
-  TextInput
+  TextInput,
+  Image
 } from 'react-native';
 import {styles}from './styles/style.js';
 import * as Strings from './values/strings.js';
@@ -21,29 +22,53 @@ class LoginScreen extends Component {
   render() {
     const{navigation}=this.props;
     return(
-    <View   style={{
-      flex: 1,
-      alignContent:'center',
-      padding: 30,
-      margin: 50,
-      width: undefined,
-      height: undefined,
 
-    }}>
-    <Text style={styles.text}>{Strings.EMAIL}</Text>
-    <TextInput
-       style={{height: 40, borderColor: 'gray', borderWidth: 1}}
+     <View style={styles.login_container}>
+     <View style={styles.image_container}>
+     <Text style={styles.image}></Text>
+     </View>
+      <View style={styles.email_container}>
+      <View style={styles.email}>
+       <Text style={styles.email_text}>{Strings.EMAIL}</Text>
+      </View>
+      <View>
+<TextInput
+       style={styles.email_input}
        onChange={(text) => this.setState({text})}
        value={this.state.email}
-     />
-     <Text style={styles.text}>{Strings.PASSWORD}</Text>
-     <TextInput
-        style={{height: 40, borderColor: 'gray', borderWidth: 1}}
+      />
+     </View>
+      <View>
+      <Text style={styles.email_text}>{Strings.PASSWORD}</Text>
+      <TextInput
+        style={styles.email_input}
         onChange={(text) => this.setState({text})}
         value={this.state.password}
       />
-    <Button title={Strings.LOGIN} onPress={()=>navigation.navigate('LaunchApp')}></Button>
-    </View>
+      </View>
+<View>
+      <Text style={styles.email_text}>{Strings.PASSWORD}</Text>
+      <TextInput
+        style={styles.email_input}
+        onChange={(text) => this.setState({text})}
+        value={this.state.password}
+      />
+      </View>
+       </View>
+      <View style={styles.button_container}>
+       <View style={styles.login_button} >
+      <Text >{Strings.LOGIN}</Text>
+       </View>
+<View style={styles.signup_button}>
+      <Text >{Strings.LOGIN}</Text>
+</View>  
+ <View style={styles.login_button}>
+      <Text>{Strings.do_you_have_acount + Strings.LOGIN}</Text>
+      </View>    
+</View>
+     
+    
+</View>
 
     );
   }
@@ -51,3 +76,4 @@ class LoginScreen extends Component {
 }
 
 export default LoginScreen;
+
