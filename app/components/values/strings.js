@@ -12,3 +12,4 @@ export const EMAIL = 'اسم المستخدم أو الايميل';
 export const PASSWORD = 'كلمة المرور';
 export const SUBSCRIBE = 'اشتراك الآن';
 export const LOGIN = 'تسجيل الدخول';
+export const do_you_have_acount = 'هل لديك حساب  بالفعل؟'
